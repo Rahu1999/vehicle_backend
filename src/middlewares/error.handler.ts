@@ -13,6 +13,10 @@ function errorHandlingMiddleWare(err: unknown, req: Request, res: Response, next
             return res.status(400).json({ status: 400, error: 'Missing Fields in Request', data: null });
         }
     }
+     // Error Type error handle
+    if (err instanceof Error) {
+        return res.status(500).json({ status: 500, error: err.message, data: null });
+    }
     return res.status(500).json({ status: 500, error: "Something went wrong" });
 }
 export default errorHandlingMiddleWare;

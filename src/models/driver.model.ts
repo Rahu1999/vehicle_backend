@@ -13,4 +13,7 @@ export class Driver {
 
     @Column()
     profilePhoto: string;
+    
+    @Column()
+    profilePhotoId: number;
 }

@@ -15,5 +15,11 @@ export class Vehicle {
     pucCertificate: string;
 
     @Column()
+    pucCertificateId: number;
+
+    @Column()
     insuranceCertificate: string;
+    
+    @Column()
+    insuranceCertificateId: number;
 }

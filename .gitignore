@@ -10,3 +10,6 @@ dist/
 
 # npm package management
 package-lock.json
+
+# uploads folder
+uploads/

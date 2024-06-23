@@ -1,5 +1,5 @@
-import "reflect-metadata"
 import { DataSource } from "typeorm"
+import "reflect-metadata"
 import * as dotenv from 'dotenv';
 
 // Load the .env file
