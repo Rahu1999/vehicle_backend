@@ -1,4 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, ManyToOne, JoinColumn } from 'typeorm';
+import { Vehicle } from './vehicle.model';
+import { Driver } from './driver.model';
 
 
 @Entity()
@@ -6,11 +8,13 @@ export class AssignedVehicle {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
-    vehicleId: number;
+    @ManyToOne(() => Vehicle)
+    @JoinColumn()
+    vehicle: Vehicle;
 
-    @Column()
-    driverId: number;
+    @ManyToOne(() => Driver)
+    @JoinColumn()
+    driver: Driver;
 
     @Column()
     assignedDate: Date;

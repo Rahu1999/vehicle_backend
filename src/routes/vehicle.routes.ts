@@ -13,5 +13,6 @@ multerMiddleware(certificate).fields([
     { name: 'insuranceCertificate', maxCount: 1 }
 ]),
 vehicleController.create);
+router.get('/unassign', vehicleController.unassign);
 
 export default router;

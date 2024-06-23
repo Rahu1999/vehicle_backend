@@ -4,7 +4,7 @@ import { Vehicle } from '../models/vehicle.model';
 const vehicleRepository = AppDataSource.getRepository(Vehicle);
 export class VehicleRepository {
     static async list() {
-        return await vehicleRepository.find({where:{isAssigned:false},order: { createdAt: 'DESC' }});
+        return await vehicleRepository.find({order: { createdAt: 'DESC' }});
     }
 
     static async findOne(vehicleId: number,) {
@@ -17,5 +17,9 @@ export class VehicleRepository {
 
     static async update(vehicleId:number,data: any) {
         return await vehicleRepository.update({id:vehicleId},data);
+    }
+
+    static async unassign() {
+        return await vehicleRepository.find({where:{isAssigned:false},order: { createdAt: 'DESC' }});
     }
 }

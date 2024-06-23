@@ -51,4 +51,12 @@ export class VehicleController {
             return next(error)
         }
     }
+    async unassign(req: Request, res: Response, next: NextFunction) {
+        try {
+            const result = await VehicleRepository.unassign();
+            sendSuccessResponse(req, res, { result })
+        } catch (error) {
+            return next(error)
+        }
+    }
 }
