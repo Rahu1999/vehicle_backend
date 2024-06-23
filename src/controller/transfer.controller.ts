@@ -17,7 +17,7 @@ export class TransferController {
     }
 
     async history(req: Request, res: Response) {
-        const transfers = await TransferRepository.history();
-        res.json(transfers);
+        const result = await TransferRepository.history();
+        sendSuccessResponse(req, res, { result })
     }
 }
