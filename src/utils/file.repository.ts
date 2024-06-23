@@ -4,7 +4,7 @@ import { AppDataSource } from '../data-source';
 const uploadRepository = AppDataSource.getRepository(Upload);
 export class UploadRepository {
     static async list() {
-        return await uploadRepository.find();
+        return await uploadRepository.find({order: { createdAt: 'DESC' }});
     }
     static async findOne(fileId: number) {
         return await uploadRepository.findOne({ where: { id: fileId } });

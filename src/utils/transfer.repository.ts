@@ -21,13 +21,13 @@ export class TransferRepository {
     }
 
     static async history() {
-        return await transferRepository.find({ relations: ["vehicle", "fromDriver", "toDriver"] });
+        return await transferRepository.find({ relations: ["vehicle", "fromDriver", "toDriver"],order: { createdAt: 'DESC' } });
     }
     
     static async findOne(transferId: number,) {
         return await transferRepository.findOne({ where: {  id:transferId } });
     }
     static async find() {
-        return await transferRepository.find({ relations: ["vehicle", "fromDriver", "toDriver"] });
+        return await transferRepository.find({ relations: ["vehicle", "fromDriver", "toDriver"] ,order: { createdAt: 'DESC' }});
     }
 }

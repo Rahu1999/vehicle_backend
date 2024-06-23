@@ -4,7 +4,7 @@ import { AppDataSource } from '../data-source';
 const assignedVehicleRepository = AppDataSource.getRepository(AssignedVehicle);
 export class AssignedVehicleRepository {
     static async list() {
-        return await assignedVehicleRepository.find();
+        return await assignedVehicleRepository.find({order: { createdAt: 'DESC' }});
     }
 
     static async findOne(assignedId: number,) {
