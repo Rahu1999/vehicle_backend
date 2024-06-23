@@ -22,4 +22,9 @@ export class Vehicle {
     
     @Column()
     insuranceCertificateId: number;
+
+    @Column({
+        default:false
+    })
+    isAssigned: boolean;
 }

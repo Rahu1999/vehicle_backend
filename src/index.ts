@@ -4,6 +4,7 @@ import { AppDataSource } from './data-source';
 import driverRoutes from './routes/driver.routes'
 import vehicleRoutes from './routes/vehicle.routes'
 import transferRoutes from './routes/transfer.routes'
+import assigneRoutes from './routes/assigned-vehicle.routes'
 import errorHandlingMiddleWare from './middlewares/error.handler';
 
 dotenv.config();
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use('/drivers', driverRoutes);
 app.use('/vehicles', vehicleRoutes);
 app.use('/transfers', transferRoutes);
+app.use('/assigne-vehicles', assigneRoutes);
 
 app.use(errorHandlingMiddleWare);
 app.use('*', (req, res) => {
