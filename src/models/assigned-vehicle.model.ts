@@ -1,6 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
-import { Vehicle } from './vehicle.model';
-import { Driver } from './driver.model';
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+
 
 @Entity()
 export class AssignedVehicle {
@@ -15,4 +14,10 @@ export class AssignedVehicle {
 
     @Column()
     assignedDate: Date;
+
+    @CreateDateColumn()
+    createdAt: Date;
+
+    @UpdateDateColumn()
+    updatedAt: Date;
 }

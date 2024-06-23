@@ -4,7 +4,7 @@ import { Driver } from '../models/driver.model';
 const driverRepository = AppDataSource.getRepository(Driver);
 export class DriverRepository {
     static async list() {
-        return await driverRepository.find();
+        return await driverRepository.find({order: { createdAt: 'DESC' }});
     }
     static async findOne(driverId: number) {
         return await driverRepository.findOne({ where: {  id:driverId } });
