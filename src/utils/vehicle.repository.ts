@@ -12,7 +12,6 @@ export class VehicleRepository {
     }
 
     static async create(data: any) {
-        const vehicle = vehicleRepository.create(data);
-        return await vehicleRepository.save(vehicle);
+        return await vehicleRepository.save(data);
     }
 }
