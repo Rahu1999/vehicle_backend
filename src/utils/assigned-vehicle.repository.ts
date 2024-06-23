@@ -19,4 +19,8 @@ export class AssignedVehicleRepository {
         });
         return await assignedVehicleRepository.save(transfer);
     }
+
+    static async update(vehicleId:number,driverId:number,data: any) {
+        return await assignedVehicleRepository.update({id:vehicleId,driverId},data);
+    }
 }
