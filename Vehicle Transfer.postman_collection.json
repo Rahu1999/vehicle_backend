@@ -1,0 +1,780 @@
+{
+	"info": {
+		"_postman_id": "420fa994-0227-46cb-8090-ebd887cb1369",
+		"name": "Vehicle Transfer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32105623"
+	},
+	"item": [
+		{
+			"name": "Vehicle",
+			"item": [
+				{
+					"name": "Get all vehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SEREVER_URL}}/vehicles",
+							"host": [
+								"{{SEREVER_URL}}"
+							],
+							"path": [
+								"vehicles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all vehicles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{SEREVER_URL}}/vehicles",
+									"host": [
+										"{{SEREVER_URL}}"
+									],
+									"path": [
+										"vehicles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2583"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a17-rWklAB3bMVywZBO25s+rlCeDOxY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 24 Jun 2024 18:35:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"result\": [\n            {\n                \"id\": 8,\n                \"vehicleNumber\": \"GA-93-3999\",\n                \"vehicleType\": \"Four\",\n                \"pucCertificate\": \"pucCertificate-1719253776154.png\",\n                \"pucCertificateId\": 33,\n                \"insuranceCertificate\": \"insuranceCertificate-1719253776156.png\",\n                \"insuranceCertificateId\": 34,\n                \"isAssigned\": true,\n                \"createdAt\": \"2024-06-24T12:59:36.204Z\",\n                \"updatedAt\": \"2024-06-24T12:59:47.000Z\"\n            },\n            {\n                \"id\": 7,\n                \"vehicleNumber\": \"dsfsd\",\n                \"vehicleType\": \"sdfs\",\n                \"pucCertificate\": \"pucCertificate-1719253368615.png\",\n                \"pucCertificateId\": 30,\n                \"insuranceCertificate\": \"insuranceCertificate-1719253368624.png\",\n                \"insuranceCertificateId\": 31,\n                \"isAssigned\": false,\n                \"createdAt\": \"2024-06-24T12:52:48.677Z\",\n                \"updatedAt\": \"2024-06-24T12:52:48.677Z\"\n            },\n            {\n                \"id\": 6,\n                \"vehicleNumber\": \"dfsd\",\n                \"vehicleType\": \"dsfsd\",\n                \"pucCertificate\": \"pucCertificate-1719229823918.png\",\n                \"pucCertificateId\": 27,\n                \"insuranceCertificate\": \"insuranceCertificate-1719229823919.png\",\n                \"insuranceCertificateId\": 28,\n                \"isAssigned\": true,\n                \"createdAt\": \"2024-06-24T06:20:23.977Z\",\n                \"updatedAt\": \"2024-06-24T06:20:35.000Z\"\n            },\n            {\n                \"id\": 5,\n                \"vehicleNumber\": \"DDee\",\n                \"vehicleType\": \"dsfs\",\n                \"pucCertificate\": \"pucCertificate-1719229803577.png\",\n                \"pucCertificateId\": 25,\n                \"insuranceCertificate\": \"insuranceCertificate-1719229803582.png\",\n                \"insuranceCertificateId\": 26,\n                \"isAssigned\": true,\n                \"createdAt\": \"2024-06-24T06:20:03.645Z\",\n                \"updatedAt\": \"2024-06-24T12:52:19.000Z\"\n            },\n            {\n                \"id\": 4,\n                \"vehicleNumber\": \"DD-23-1234\",\n                \"vehicleType\": \"Three wheeler\",\n                \"pucCertificate\": \"pucCertificate-1719169505237.png\",\n                \"pucCertificateId\": 22,\n                \"insuranceCertificate\": \"insuranceCertificate-1719169505251.png\",\n                \"insuranceCertificateId\": 23,\n                \"isAssigned\": true,\n                \"createdAt\": \"2024-06-23T13:35:05.402Z\",\n                \"updatedAt\": \"2024-06-24T06:10:05.000Z\"\n            },\n            {\n                \"id\": 3,\n                \"vehicleNumber\": \"DD-003-22\",\n                \"vehicleType\": \"Three wheeler\",\n                \"pucCertificate\": \"pucCertificate-1719159497859.png\",\n                \"pucCertificateId\": 20,\n                \"insuranceCertificate\": \"insuranceCertificate-1719159497864.png\",\n                \"insuranceCertificateId\": 21,\n                \"isAssigned\": true,\n                \"createdAt\": \"2024-06-23T10:48:17.929Z\",\n                \"updatedAt\": \"2024-06-23T12:29:48.000Z\"\n            },\n            {\n                \"id\": 2,\n                \"vehicleNumber\": \"MH-3939-293\",\n                \"vehicleType\": \"four wheeler\",\n                \"pucCertificate\": \"pucCertificate-1719158426789.png\",\n                \"pucCertificateId\": 18,\n                \"insuranceCertificate\": \"insuranceCertificate-1719158426797.png\",\n                \"insuranceCertificateId\": 19,\n                \"isAssigned\": true,\n                \"createdAt\": \"2024-06-23T10:30:26.883Z\",\n                \"updatedAt\": \"2024-06-23T12:32:09.000Z\"\n            },\n            {\n                \"id\": 1,\n                \"vehicleNumber\": \"MH-02-47-9393\",\n                \"vehicleType\": \"two-wheeler\",\n                \"pucCertificate\": \"KK#H$%123\",\n                \"pucCertificateId\": 0,\n                \"insuranceCertificate\": \"DFSG$@%545\",\n                \"insuranceCertificateId\": 0,\n                \"isAssigned\": true,\n                \"createdAt\": \"2024-06-23T10:02:05.181Z\",\n                \"updatedAt\": \"2024-06-24T06:19:23.000Z\"\n            }\n        ]\n    },\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Get unassign vehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SEREVER_URL}}/vehicles/unassign",
+							"host": [
+								"{{SEREVER_URL}}"
+							],
+							"path": [
+								"vehicles",
+								"unassign"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{SEREVER_URL}}/vehicles",
+									"host": [
+										"{{SEREVER_URL}}"
+									],
+									"path": [
+										"vehicles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "181"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b5-RMGKCjiR9sEInOIkL+s2ypVyVm0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jun 2024 18:11:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"result\": [\n            {\n                \"id\": 1,\n                \"vehicleNumber\": \"MH-02-47-9393\",\n                \"vehicleType\": \"two-wheeler\",\n                \"pucCertificate\": \"KK#H$%123\",\n                \"insuranceCertificate\": \"DFSG$@%545\"\n            }\n        ]\n    },\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Add vehicle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicleNumber\":\"MH-02-47-9393\",\r\n    \"vehicleType\": \"two-wheeler\",\r\n    \"pucCertificate\":\"KK#H$%123\",\r\n    \"insuranceCertificate\":\"DFSG$@%545\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SEREVER_URL}}/vehicles",
+							"host": [
+								"{{SEREVER_URL}}"
+							],
+							"path": [
+								"vehicles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicleNumber\":\"MH-02-47-9393\",\r\n    \"vehicleType\": \"two-wheeler\",\r\n    \"pucCertificate\":\"KK#H$%123\",\r\n    \"insuranceCertificate\":\"DFSG$@%545\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{SEREVER_URL}}/vehicles",
+									"host": [
+										"{{SEREVER_URL}}"
+									],
+									"path": [
+										"vehicles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "179"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b3-ChxIfvBBvoeKBCyjuHWGaB9uhI0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jun 2024 18:11:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"result\": {\n            \"vehicleNumber\": \"MH-02-47-9393\",\n            \"vehicleType\": \"two-wheeler\",\n            \"pucCertificate\": \"KK#H$%123\",\n            \"insuranceCertificate\": \"DFSG$@%545\",\n            \"id\": 1\n        }\n    },\n    \"error\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Driver",
+			"item": [
+				{
+					"name": "Get all driver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SEREVER_URL}}/drivers",
+							"host": [
+								"{{SEREVER_URL}}"
+							],
+							"path": [
+								"drivers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{SEREVER_URL}}/drivers",
+									"host": [
+										"{{SEREVER_URL}}"
+									],
+									"path": [
+										"drivers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3462"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d86-4ERo+6puxBXIK8FYmyYKHlXcBH0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 24 Jun 2024 18:35:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"result\": [\n            {\n                \"id\": 18,\n                \"name\": \"Sonu\",\n                \"phoneNumber\": \"9393939393\",\n                \"profilePhoto\": \"file-1719253731980.jpeg\",\n                \"profilePhotoId\": 32,\n                \"createdAt\": \"2024-06-24T12:58:52.031Z\",\n                \"updatedAt\": \"2024-06-24T12:58:52.031Z\"\n            },\n            {\n                \"id\": 17,\n                \"name\": \"NeW driver\",\n                \"phoneNumber\": \"733773733\",\n                \"profilePhoto\": \"file-1719252809969.png\",\n                \"profilePhotoId\": 29,\n                \"createdAt\": \"2024-06-24T12:43:30.022Z\",\n                \"updatedAt\": \"2024-06-24T12:43:30.022Z\"\n            },\n            {\n                \"id\": 16,\n                \"name\": \"sddsfg\",\n                \"phoneNumber\": \"34543\",\n                \"profilePhoto\": \"file-1719229781349.png\",\n                \"profilePhotoId\": 24,\n                \"createdAt\": \"2024-06-24T06:19:41.437Z\",\n                \"updatedAt\": \"2024-06-24T06:19:41.437Z\"\n            },\n            {\n                \"id\": 15,\n                \"name\": \"Test 123\",\n                \"phoneNumber\": \"883838\",\n                \"profilePhoto\": \"file-1719156986463.png\",\n                \"profilePhotoId\": 17,\n                \"createdAt\": \"2024-06-23T10:06:26.541Z\",\n                \"updatedAt\": \"2024-06-23T10:06:26.541Z\"\n            },\n            {\n                \"id\": 14,\n                \"name\": \"sdfsd\",\n                \"phoneNumber\": \"235235\",\n                \"profilePhoto\": \"file-1719156873292.png\",\n                \"profilePhotoId\": 16,\n                \"createdAt\": \"2024-06-23T10:04:33.328Z\",\n                \"updatedAt\": \"2024-06-23T10:04:33.328Z\"\n            },\n            {\n                \"id\": 13,\n                \"name\": \"sddsga\",\n                \"phoneNumber\": \"gdfsgdf\",\n                \"profilePhoto\": \"file-1719156827056.png\",\n                \"profilePhotoId\": 15,\n                \"createdAt\": \"2024-06-23T10:03:47.090Z\",\n                \"updatedAt\": \"2024-06-23T10:03:47.090Z\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"hsdf\",\n                \"phoneNumber\": \"22838\",\n                \"profilePhoto\": \"file-1719156785593.png\",\n                \"profilePhotoId\": 14,\n                \"createdAt\": \"2024-06-23T10:03:05.654Z\",\n                \"updatedAt\": \"2024-06-23T10:03:05.654Z\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"1Rahul Rajbhar\",\n                \"phoneNumber\": \"111\",\n                \"profilePhoto\": \"file-1719154221184.png\",\n                \"profilePhotoId\": 12,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            },\n            {\n                \"id\": 11,\n                \"name\": \"Rahul Rajbhar1\",\n                \"phoneNumber\": \"43534\",\n                \"profilePhoto\": \"file-1719154580928.png\",\n                \"profilePhotoId\": 13,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            },\n            {\n                \"id\": 1,\n                \"name\": \"Rahul\",\n                \"phoneNumber\": \"9594183946\",\n                \"profilePhoto\": \"file-1719131255128.jpeg\",\n                \"profilePhotoId\": 3,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            },\n            {\n                \"id\": 9,\n                \"name\": \"1Rahul Rajbhar\",\n                \"phoneNumber\": \"111\",\n                \"profilePhoto\": \"file-1719154134554.png\",\n                \"profilePhotoId\": 11,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Rahul\",\n                \"phoneNumber\": \"9594183946\",\n                \"profilePhoto\": \"file-1719154083590.jpeg\",\n                \"profilePhotoId\": 10,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"1Rahul Rajbhar\",\n                \"phoneNumber\": \"111\",\n                \"profilePhoto\": \"file-1719153995661.png\",\n                \"profilePhotoId\": 9,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Rahul Rajbhar\",\n                \"phoneNumber\": \"1777727727\",\n                \"profilePhoto\": \"file-1719153904450.png\",\n                \"profilePhotoId\": 8,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Rahul\",\n                \"phoneNumber\": \"9594183946\",\n                \"profilePhoto\": \"file-1719132484710.jpeg\",\n                \"profilePhotoId\": 7,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Rahul\",\n                \"phoneNumber\": \"9594183946\",\n                \"profilePhoto\": \"file-1719132415003.jpeg\",\n                \"profilePhotoId\": 6,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Rahul\",\n                \"phoneNumber\": \"9594183946\",\n                \"profilePhoto\": \"file-1719132314494.jpeg\",\n                \"profilePhotoId\": 5,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Rahul\",\n                \"phoneNumber\": \"9594183946\",\n                \"profilePhoto\": \"file-1719131288022.jpeg\",\n                \"profilePhotoId\": 4,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            }\n        ]\n    },\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Add driver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/rahul/Downloads/WhatsApp Image 2024-06-07 at 5.53.26 PM.jpeg"
+								},
+								{
+									"key": "name",
+									"value": "Rahul",
+									"type": "text"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "9594183946",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{SEREVER_URL}}/drivers",
+							"host": [
+								"{{SEREVER_URL}}"
+							],
+							"path": [
+								"drivers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add driver",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/rahul/Downloads/WhatsApp Image 2024-06-07 at 5.53.26 PM.jpeg"
+										},
+										{
+											"key": "name",
+											"value": "Rahul",
+											"type": "text"
+										},
+										{
+											"key": "phoneNumber",
+											"value": "9594183946",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{SEREVER_URL}}/drivers",
+									"host": [
+										"{{SEREVER_URL}}"
+									],
+									"path": [
+										"drivers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "276"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"114-Y5uQs3+FCFIdcMMNeepiWc2oajo\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 24 Jun 2024 18:36:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"message\": \"Driver created successfully\",\n        \"result\": {\n            \"name\": \"Rahul\",\n            \"phoneNumber\": \"9594183946\",\n            \"profilePhoto\": \"file-1719254180842.jpeg\",\n            \"profilePhotoId\": 35,\n            \"id\": 19,\n            \"createdAt\": \"2024-06-24T13:06:20.875Z\",\n            \"updatedAt\": \"2024-06-24T13:06:20.875Z\"\n        }\n    },\n    \"error\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "transfer",
+			"item": [
+				{
+					"name": "Transfer vehicle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicleId\":2, \"fromDriverId\":11, \"toDriverId\":12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SEREVER_URL}}/transfers/transfer",
+							"host": [
+								"{{SEREVER_URL}}"
+							],
+							"path": [
+								"transfers",
+								"transfer"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicleId\":2, \"fromDriverId\":11, \"toDriverId\":12\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{SEREVER_URL}}/transfers/transfer",
+									"host": [
+										"{{SEREVER_URL}}"
+									],
+									"path": [
+										"transfers",
+										"transfer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "917"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"395-XQuevxxu85CT+tjlUi/ocP85J08\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 24 Jun 2024 18:36:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"result\": {\n            \"transferDate\": \"2024-06-24T18:36:48.823Z\",\n            \"vehicle\": {\n                \"id\": 2,\n                \"vehicleNumber\": \"MH-3939-293\",\n                \"vehicleType\": \"four wheeler\",\n                \"pucCertificate\": \"pucCertificate-1719158426789.png\",\n                \"pucCertificateId\": 18,\n                \"insuranceCertificate\": \"insuranceCertificate-1719158426797.png\",\n                \"insuranceCertificateId\": 19,\n                \"isAssigned\": true,\n                \"createdAt\": \"2024-06-23T10:30:26.883Z\",\n                \"updatedAt\": \"2024-06-23T12:32:09.000Z\"\n            },\n            \"fromDriver\": {\n                \"id\": 11,\n                \"name\": \"Rahul Rajbhar1\",\n                \"phoneNumber\": \"43534\",\n                \"profilePhoto\": \"file-1719154580928.png\",\n                \"profilePhotoId\": 13,\n                \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n            },\n            \"toDriver\": {\n                \"id\": 12,\n                \"name\": \"hsdf\",\n                \"phoneNumber\": \"22838\",\n                \"profilePhoto\": \"file-1719156785593.png\",\n                \"profilePhotoId\": 14,\n                \"createdAt\": \"2024-06-23T10:03:05.654Z\",\n                \"updatedAt\": \"2024-06-23T10:03:05.654Z\"\n            },\n            \"id\": 10,\n            \"createdAt\": \"2024-06-24T13:06:48.831Z\",\n            \"updatedAt\": \"2024-06-24T13:06:48.831Z\"\n        }\n    },\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Transfer history",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SEREVER_URL}}/transfers/history",
+							"host": [
+								"{{SEREVER_URL}}"
+							],
+							"path": [
+								"transfers",
+								"history"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{SEREVER_URL}}/transfers/history",
+									"host": [
+										"{{SEREVER_URL}}"
+									],
+									"path": [
+										"transfers",
+										"history"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "8658"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"21d2-w+Tm2/psckQrwU+Tc/nGKoMu2EI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 24 Jun 2024 18:37:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"result\": [\n            {\n                \"id\": 10,\n                \"transferDate\": \"2024-06-24T18:36:49.000Z\",\n                \"createdAt\": \"2024-06-24T13:06:48.831Z\",\n                \"updatedAt\": \"2024-06-24T13:06:48.831Z\",\n                \"vehicle\": {\n                    \"id\": 2,\n                    \"vehicleNumber\": \"MH-3939-293\",\n                    \"vehicleType\": \"four wheeler\",\n                    \"pucCertificate\": \"pucCertificate-1719158426789.png\",\n                    \"pucCertificateId\": 18,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719158426797.png\",\n                    \"insuranceCertificateId\": 19,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-23T10:30:26.883Z\",\n                    \"updatedAt\": \"2024-06-23T12:32:09.000Z\"\n                },\n                \"fromDriver\": {\n                    \"id\": 11,\n                    \"name\": \"Rahul Rajbhar1\",\n                    \"phoneNumber\": \"43534\",\n                    \"profilePhoto\": \"file-1719154580928.png\",\n                    \"profilePhotoId\": 13,\n                    \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                    \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n                },\n                \"toDriver\": {\n                    \"id\": 12,\n                    \"name\": \"hsdf\",\n                    \"phoneNumber\": \"22838\",\n                    \"profilePhoto\": \"file-1719156785593.png\",\n                    \"profilePhotoId\": 14,\n                    \"createdAt\": \"2024-06-23T10:03:05.654Z\",\n                    \"updatedAt\": \"2024-06-23T10:03:05.654Z\"\n                }\n            },\n            {\n                \"id\": 9,\n                \"transferDate\": \"2024-06-24T18:29:57.000Z\",\n                \"createdAt\": \"2024-06-24T12:59:57.127Z\",\n                \"updatedAt\": \"2024-06-24T12:59:57.127Z\",\n                \"vehicle\": {\n                    \"id\": 8,\n                    \"vehicleNumber\": \"GA-93-3999\",\n                    \"vehicleType\": \"Four\",\n                    \"pucCertificate\": \"pucCertificate-1719253776154.png\",\n                    \"pucCertificateId\": 33,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719253776156.png\",\n                    \"insuranceCertificateId\": 34,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-24T12:59:36.204Z\",\n                    \"updatedAt\": \"2024-06-24T12:59:47.000Z\"\n                },\n                \"fromDriver\": {\n                    \"id\": 18,\n                    \"name\": \"Sonu\",\n                    \"phoneNumber\": \"9393939393\",\n                    \"profilePhoto\": \"file-1719253731980.jpeg\",\n                    \"profilePhotoId\": 32,\n                    \"createdAt\": \"2024-06-24T12:58:52.031Z\",\n                    \"updatedAt\": \"2024-06-24T12:58:52.031Z\"\n                },\n                \"toDriver\": {\n                    \"id\": 11,\n                    \"name\": \"Rahul Rajbhar1\",\n                    \"phoneNumber\": \"43534\",\n                    \"profilePhoto\": \"file-1719154580928.png\",\n                    \"profilePhotoId\": 13,\n                    \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                    \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n                }\n            },\n            {\n                \"id\": 8,\n                \"transferDate\": \"2024-06-24T18:10:01.000Z\",\n                \"createdAt\": \"2024-06-24T12:40:00.833Z\",\n                \"updatedAt\": \"2024-06-24T12:40:00.833Z\",\n                \"vehicle\": {\n                    \"id\": 2,\n                    \"vehicleNumber\": \"MH-3939-293\",\n                    \"vehicleType\": \"four wheeler\",\n                    \"pucCertificate\": \"pucCertificate-1719158426789.png\",\n                    \"pucCertificateId\": 18,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719158426797.png\",\n                    \"insuranceCertificateId\": 19,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-23T10:30:26.883Z\",\n                    \"updatedAt\": \"2024-06-23T12:32:09.000Z\"\n                },\n                \"fromDriver\": {\n                    \"id\": 12,\n                    \"name\": \"hsdf\",\n                    \"phoneNumber\": \"22838\",\n                    \"profilePhoto\": \"file-1719156785593.png\",\n                    \"profilePhotoId\": 14,\n                    \"createdAt\": \"2024-06-23T10:03:05.654Z\",\n                    \"updatedAt\": \"2024-06-23T10:03:05.654Z\"\n                },\n                \"toDriver\": {\n                    \"id\": 12,\n                    \"name\": \"hsdf\",\n                    \"phoneNumber\": \"22838\",\n                    \"profilePhoto\": \"file-1719156785593.png\",\n                    \"profilePhotoId\": 14,\n                    \"createdAt\": \"2024-06-23T10:03:05.654Z\",\n                    \"updatedAt\": \"2024-06-23T10:03:05.654Z\"\n                }\n            },\n            {\n                \"id\": 7,\n                \"transferDate\": \"2024-06-24T18:07:17.000Z\",\n                \"createdAt\": \"2024-06-24T12:37:17.107Z\",\n                \"updatedAt\": \"2024-06-24T12:37:17.107Z\",\n                \"vehicle\": {\n                    \"id\": 1,\n                    \"vehicleNumber\": \"MH-02-47-9393\",\n                    \"vehicleType\": \"two-wheeler\",\n                    \"pucCertificate\": \"KK#H$%123\",\n                    \"pucCertificateId\": 0,\n                    \"insuranceCertificate\": \"DFSG$@%545\",\n                    \"insuranceCertificateId\": 0,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-23T10:02:05.181Z\",\n                    \"updatedAt\": \"2024-06-24T06:19:23.000Z\"\n                },\n                \"fromDriver\": {\n                    \"id\": 13,\n                    \"name\": \"sddsga\",\n                    \"phoneNumber\": \"gdfsgdf\",\n                    \"profilePhoto\": \"file-1719156827056.png\",\n                    \"profilePhotoId\": 15,\n                    \"createdAt\": \"2024-06-23T10:03:47.090Z\",\n                    \"updatedAt\": \"2024-06-23T10:03:47.090Z\"\n                },\n                \"toDriver\": {\n                    \"id\": 14,\n                    \"name\": \"sdfsd\",\n                    \"phoneNumber\": \"235235\",\n                    \"profilePhoto\": \"file-1719156873292.png\",\n                    \"profilePhotoId\": 16,\n                    \"createdAt\": \"2024-06-23T10:04:33.328Z\",\n                    \"updatedAt\": \"2024-06-23T10:04:33.328Z\"\n                }\n            },\n            {\n                \"id\": 6,\n                \"transferDate\": \"2024-06-24T18:06:21.000Z\",\n                \"createdAt\": \"2024-06-24T12:36:21.217Z\",\n                \"updatedAt\": \"2024-06-24T12:36:21.217Z\",\n                \"vehicle\": {\n                    \"id\": 6,\n                    \"vehicleNumber\": \"dfsd\",\n                    \"vehicleType\": \"dsfsd\",\n                    \"pucCertificate\": \"pucCertificate-1719229823918.png\",\n                    \"pucCertificateId\": 27,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719229823919.png\",\n                    \"insuranceCertificateId\": 28,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-24T06:20:23.977Z\",\n                    \"updatedAt\": \"2024-06-24T06:20:35.000Z\"\n                },\n                \"fromDriver\": {\n                    \"id\": 6,\n                    \"name\": \"Rahul Rajbhar\",\n                    \"phoneNumber\": \"1777727727\",\n                    \"profilePhoto\": \"file-1719153904450.png\",\n                    \"profilePhotoId\": 8,\n                    \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                    \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n                },\n                \"toDriver\": {\n                    \"id\": 14,\n                    \"name\": \"sdfsd\",\n                    \"phoneNumber\": \"235235\",\n                    \"profilePhoto\": \"file-1719156873292.png\",\n                    \"profilePhotoId\": 16,\n                    \"createdAt\": \"2024-06-23T10:04:33.328Z\",\n                    \"updatedAt\": \"2024-06-23T10:04:33.328Z\"\n                }\n            },\n            {\n                \"id\": 5,\n                \"transferDate\": \"2024-06-24T18:04:37.000Z\",\n                \"createdAt\": \"2024-06-24T12:34:37.202Z\",\n                \"updatedAt\": \"2024-06-24T12:34:37.202Z\",\n                \"vehicle\": {\n                    \"id\": 6,\n                    \"vehicleNumber\": \"dfsd\",\n                    \"vehicleType\": \"dsfsd\",\n                    \"pucCertificate\": \"pucCertificate-1719229823918.png\",\n                    \"pucCertificateId\": 27,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719229823919.png\",\n                    \"insuranceCertificateId\": 28,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-24T06:20:23.977Z\",\n                    \"updatedAt\": \"2024-06-24T06:20:35.000Z\"\n                },\n                \"fromDriver\": {\n                    \"id\": 6,\n                    \"name\": \"Rahul Rajbhar\",\n                    \"phoneNumber\": \"1777727727\",\n                    \"profilePhoto\": \"file-1719153904450.png\",\n                    \"profilePhotoId\": 8,\n                    \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                    \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n                },\n                \"toDriver\": {\n                    \"id\": 14,\n                    \"name\": \"sdfsd\",\n                    \"phoneNumber\": \"235235\",\n                    \"profilePhoto\": \"file-1719156873292.png\",\n                    \"profilePhotoId\": 16,\n                    \"createdAt\": \"2024-06-23T10:04:33.328Z\",\n                    \"updatedAt\": \"2024-06-23T10:04:33.328Z\"\n                }\n            },\n            {\n                \"id\": 4,\n                \"transferDate\": \"2024-06-24T17:58:54.000Z\",\n                \"createdAt\": \"2024-06-24T12:28:54.189Z\",\n                \"updatedAt\": \"2024-06-24T12:28:54.189Z\",\n                \"vehicle\": {\n                    \"id\": 6,\n                    \"vehicleNumber\": \"dfsd\",\n                    \"vehicleType\": \"dsfsd\",\n                    \"pucCertificate\": \"pucCertificate-1719229823918.png\",\n                    \"pucCertificateId\": 27,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719229823919.png\",\n                    \"insuranceCertificateId\": 28,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-24T06:20:23.977Z\",\n                    \"updatedAt\": \"2024-06-24T06:20:35.000Z\"\n                },\n                \"fromDriver\": {\n                    \"id\": 15,\n                    \"name\": \"Test 123\",\n                    \"phoneNumber\": \"883838\",\n                    \"profilePhoto\": \"file-1719156986463.png\",\n                    \"profilePhotoId\": 17,\n                    \"createdAt\": \"2024-06-23T10:06:26.541Z\",\n                    \"updatedAt\": \"2024-06-23T10:06:26.541Z\"\n                },\n                \"toDriver\": {\n                    \"id\": 6,\n                    \"name\": \"Rahul Rajbhar\",\n                    \"phoneNumber\": \"1777727727\",\n                    \"profilePhoto\": \"file-1719153904450.png\",\n                    \"profilePhotoId\": 8,\n                    \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                    \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n                }\n            },\n            {\n                \"id\": 3,\n                \"transferDate\": \"2024-06-23T18:03:00.000Z\",\n                \"createdAt\": \"2024-06-23T12:33:00.487Z\",\n                \"updatedAt\": \"2024-06-23T12:33:00.487Z\",\n                \"vehicle\": {\n                    \"id\": 2,\n                    \"vehicleNumber\": \"MH-3939-293\",\n                    \"vehicleType\": \"four wheeler\",\n                    \"pucCertificate\": \"pucCertificate-1719158426789.png\",\n                    \"pucCertificateId\": 18,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719158426797.png\",\n                    \"insuranceCertificateId\": 19,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-23T10:30:26.883Z\",\n                    \"updatedAt\": \"2024-06-23T12:32:09.000Z\"\n                },\n                \"fromDriver\": {\n                    \"id\": 11,\n                    \"name\": \"Rahul Rajbhar1\",\n                    \"phoneNumber\": \"43534\",\n                    \"profilePhoto\": \"file-1719154580928.png\",\n                    \"profilePhotoId\": 13,\n                    \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                    \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n                },\n                \"toDriver\": {\n                    \"id\": 12,\n                    \"name\": \"hsdf\",\n                    \"phoneNumber\": \"22838\",\n                    \"profilePhoto\": \"file-1719156785593.png\",\n                    \"profilePhotoId\": 14,\n                    \"createdAt\": \"2024-06-23T10:03:05.654Z\",\n                    \"updatedAt\": \"2024-06-23T10:03:05.654Z\"\n                }\n            },\n            {\n                \"id\": 2,\n                \"transferDate\": \"2024-06-23T18:02:28.000Z\",\n                \"createdAt\": \"2024-06-23T12:32:27.724Z\",\n                \"updatedAt\": \"2024-06-23T12:32:27.724Z\",\n                \"vehicle\": {\n                    \"id\": 2,\n                    \"vehicleNumber\": \"MH-3939-293\",\n                    \"vehicleType\": \"four wheeler\",\n                    \"pucCertificate\": \"pucCertificate-1719158426789.png\",\n                    \"pucCertificateId\": 18,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719158426797.png\",\n                    \"insuranceCertificateId\": 19,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-23T10:30:26.883Z\",\n                    \"updatedAt\": \"2024-06-23T12:32:09.000Z\"\n                },\n                \"fromDriver\": {\n                    \"id\": 12,\n                    \"name\": \"hsdf\",\n                    \"phoneNumber\": \"22838\",\n                    \"profilePhoto\": \"file-1719156785593.png\",\n                    \"profilePhotoId\": 14,\n                    \"createdAt\": \"2024-06-23T10:03:05.654Z\",\n                    \"updatedAt\": \"2024-06-23T10:03:05.654Z\"\n                },\n                \"toDriver\": {\n                    \"id\": 11,\n                    \"name\": \"Rahul Rajbhar1\",\n                    \"phoneNumber\": \"43534\",\n                    \"profilePhoto\": \"file-1719154580928.png\",\n                    \"profilePhotoId\": 13,\n                    \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                    \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n                }\n            },\n            {\n                \"id\": 1,\n                \"transferDate\": \"2024-06-23T18:01:14.000Z\",\n                \"createdAt\": \"2024-06-23T12:31:13.870Z\",\n                \"updatedAt\": \"2024-06-23T12:31:13.870Z\",\n                \"vehicle\": {\n                    \"id\": 3,\n                    \"vehicleNumber\": \"DD-003-22\",\n                    \"vehicleType\": \"Three wheeler\",\n                    \"pucCertificate\": \"pucCertificate-1719159497859.png\",\n                    \"pucCertificateId\": 20,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719159497864.png\",\n                    \"insuranceCertificateId\": 21,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-23T10:48:17.929Z\",\n                    \"updatedAt\": \"2024-06-23T12:29:48.000Z\"\n                },\n                \"fromDriver\": {\n                    \"id\": 15,\n                    \"name\": \"Test 123\",\n                    \"phoneNumber\": \"883838\",\n                    \"profilePhoto\": \"file-1719156986463.png\",\n                    \"profilePhotoId\": 17,\n                    \"createdAt\": \"2024-06-23T10:06:26.541Z\",\n                    \"updatedAt\": \"2024-06-23T10:06:26.541Z\"\n                },\n                \"toDriver\": {\n                    \"id\": 14,\n                    \"name\": \"sdfsd\",\n                    \"phoneNumber\": \"235235\",\n                    \"profilePhoto\": \"file-1719156873292.png\",\n                    \"profilePhotoId\": 16,\n                    \"createdAt\": \"2024-06-23T10:04:33.328Z\",\n                    \"updatedAt\": \"2024-06-23T10:04:33.328Z\"\n                }\n            }\n        ]\n    },\n    \"error\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "assigned vehicle",
+			"item": [
+				{
+					"name": "Get assign vehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{SEREVER_URL}}/assign-vehicles",
+							"host": [
+								"{{SEREVER_URL}}"
+							],
+							"path": [
+								"assign-vehicles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get assign vehicles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{SEREVER_URL}}/assign-vehicles",
+									"host": [
+										"{{SEREVER_URL}}"
+									],
+									"path": [
+										"assign-vehicles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4613"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1205-t5iPACHqehnZcWo2weGKAQJsA30\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 24 Jun 2024 18:37:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"result\": [\n            {\n                \"id\": 7,\n                \"assignedDate\": \"2024-06-24T18:29:47.000Z\",\n                \"createdAt\": \"2024-06-24T12:59:47.111Z\",\n                \"updatedAt\": \"2024-06-24T12:59:57.000Z\",\n                \"vehicle\": {\n                    \"id\": 8,\n                    \"vehicleNumber\": \"GA-93-3999\",\n                    \"vehicleType\": \"Four\",\n                    \"pucCertificate\": \"pucCertificate-1719253776154.png\",\n                    \"pucCertificateId\": 33,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719253776156.png\",\n                    \"insuranceCertificateId\": 34,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-24T12:59:36.204Z\",\n                    \"updatedAt\": \"2024-06-24T12:59:47.000Z\"\n                },\n                \"driver\": {\n                    \"id\": 11,\n                    \"name\": \"Rahul Rajbhar1\",\n                    \"phoneNumber\": \"43534\",\n                    \"profilePhoto\": \"file-1719154580928.png\",\n                    \"profilePhotoId\": 13,\n                    \"createdAt\": \"2024-06-23T10:02:41.222Z\",\n                    \"updatedAt\": \"2024-06-23T10:02:41.254Z\"\n                }\n            },\n            {\n                \"id\": 6,\n                \"assignedDate\": \"2024-06-24T18:22:19.000Z\",\n                \"createdAt\": \"2024-06-24T12:52:19.255Z\",\n                \"updatedAt\": \"2024-06-24T12:52:19.255Z\",\n                \"vehicle\": {\n                    \"id\": 5,\n                    \"vehicleNumber\": \"DDee\",\n                    \"vehicleType\": \"dsfs\",\n                    \"pucCertificate\": \"pucCertificate-1719229803577.png\",\n                    \"pucCertificateId\": 25,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719229803582.png\",\n                    \"insuranceCertificateId\": 26,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-24T06:20:03.645Z\",\n                    \"updatedAt\": \"2024-06-24T12:52:19.000Z\"\n                },\n                \"driver\": {\n                    \"id\": 15,\n                    \"name\": \"Test 123\",\n                    \"phoneNumber\": \"883838\",\n                    \"profilePhoto\": \"file-1719156986463.png\",\n                    \"profilePhotoId\": 17,\n                    \"createdAt\": \"2024-06-23T10:06:26.541Z\",\n                    \"updatedAt\": \"2024-06-23T10:06:26.541Z\"\n                }\n            },\n            {\n                \"id\": 5,\n                \"assignedDate\": \"2024-06-24T11:50:36.000Z\",\n                \"createdAt\": \"2024-06-24T06:20:35.569Z\",\n                \"updatedAt\": \"2024-06-24T12:34:37.000Z\",\n                \"vehicle\": {\n                    \"id\": 6,\n                    \"vehicleNumber\": \"dfsd\",\n                    \"vehicleType\": \"dsfsd\",\n                    \"pucCertificate\": \"pucCertificate-1719229823918.png\",\n                    \"pucCertificateId\": 27,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719229823919.png\",\n                    \"insuranceCertificateId\": 28,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-24T06:20:23.977Z\",\n                    \"updatedAt\": \"2024-06-24T06:20:35.000Z\"\n                },\n                \"driver\": {\n                    \"id\": 14,\n                    \"name\": \"sdfsd\",\n                    \"phoneNumber\": \"235235\",\n                    \"profilePhoto\": \"file-1719156873292.png\",\n                    \"profilePhotoId\": 16,\n                    \"createdAt\": \"2024-06-23T10:04:33.328Z\",\n                    \"updatedAt\": \"2024-06-23T10:04:33.328Z\"\n                }\n            },\n            {\n                \"id\": 4,\n                \"assignedDate\": \"2024-06-24T11:49:23.000Z\",\n                \"createdAt\": \"2024-06-24T06:19:23.158Z\",\n                \"updatedAt\": \"2024-06-24T12:37:17.000Z\",\n                \"vehicle\": {\n                    \"id\": 1,\n                    \"vehicleNumber\": \"MH-02-47-9393\",\n                    \"vehicleType\": \"two-wheeler\",\n                    \"pucCertificate\": \"KK#H$%123\",\n                    \"pucCertificateId\": 0,\n                    \"insuranceCertificate\": \"DFSG$@%545\",\n                    \"insuranceCertificateId\": 0,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-23T10:02:05.181Z\",\n                    \"updatedAt\": \"2024-06-24T06:19:23.000Z\"\n                },\n                \"driver\": {\n                    \"id\": 14,\n                    \"name\": \"sdfsd\",\n                    \"phoneNumber\": \"235235\",\n                    \"profilePhoto\": \"file-1719156873292.png\",\n                    \"profilePhotoId\": 16,\n                    \"createdAt\": \"2024-06-23T10:04:33.328Z\",\n                    \"updatedAt\": \"2024-06-23T10:04:33.328Z\"\n                }\n            },\n            {\n                \"id\": 3,\n                \"assignedDate\": \"2024-06-24T11:40:05.000Z\",\n                \"createdAt\": \"2024-06-24T06:10:05.185Z\",\n                \"updatedAt\": \"2024-06-24T06:10:05.185Z\",\n                \"vehicle\": {\n                    \"id\": 4,\n                    \"vehicleNumber\": \"DD-23-1234\",\n                    \"vehicleType\": \"Three wheeler\",\n                    \"pucCertificate\": \"pucCertificate-1719169505237.png\",\n                    \"pucCertificateId\": 22,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719169505251.png\",\n                    \"insuranceCertificateId\": 23,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-23T13:35:05.402Z\",\n                    \"updatedAt\": \"2024-06-24T06:10:05.000Z\"\n                },\n                \"driver\": {\n                    \"id\": 14,\n                    \"name\": \"sdfsd\",\n                    \"phoneNumber\": \"235235\",\n                    \"profilePhoto\": \"file-1719156873292.png\",\n                    \"profilePhotoId\": 16,\n                    \"createdAt\": \"2024-06-23T10:04:33.328Z\",\n                    \"updatedAt\": \"2024-06-23T10:04:33.328Z\"\n                }\n            },\n            {\n                \"id\": 2,\n                \"assignedDate\": \"2024-06-23T18:02:09.000Z\",\n                \"createdAt\": \"2024-06-23T12:32:09.261Z\",\n                \"updatedAt\": \"2024-06-24T12:40:00.000Z\",\n                \"vehicle\": {\n                    \"id\": 2,\n                    \"vehicleNumber\": \"MH-3939-293\",\n                    \"vehicleType\": \"four wheeler\",\n                    \"pucCertificate\": \"pucCertificate-1719158426789.png\",\n                    \"pucCertificateId\": 18,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719158426797.png\",\n                    \"insuranceCertificateId\": 19,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-23T10:30:26.883Z\",\n                    \"updatedAt\": \"2024-06-23T12:32:09.000Z\"\n                },\n                \"driver\": {\n                    \"id\": 12,\n                    \"name\": \"hsdf\",\n                    \"phoneNumber\": \"22838\",\n                    \"profilePhoto\": \"file-1719156785593.png\",\n                    \"profilePhotoId\": 14,\n                    \"createdAt\": \"2024-06-23T10:03:05.654Z\",\n                    \"updatedAt\": \"2024-06-23T10:03:05.654Z\"\n                }\n            },\n            {\n                \"id\": 1,\n                \"assignedDate\": \"2024-06-23T17:59:48.000Z\",\n                \"createdAt\": \"2024-06-23T12:29:48.242Z\",\n                \"updatedAt\": \"2024-06-23T12:31:13.000Z\",\n                \"vehicle\": {\n                    \"id\": 3,\n                    \"vehicleNumber\": \"DD-003-22\",\n                    \"vehicleType\": \"Three wheeler\",\n                    \"pucCertificate\": \"pucCertificate-1719159497859.png\",\n                    \"pucCertificateId\": 20,\n                    \"insuranceCertificate\": \"insuranceCertificate-1719159497864.png\",\n                    \"insuranceCertificateId\": 21,\n                    \"isAssigned\": true,\n                    \"createdAt\": \"2024-06-23T10:48:17.929Z\",\n                    \"updatedAt\": \"2024-06-23T12:29:48.000Z\"\n                },\n                \"driver\": {\n                    \"id\": 14,\n                    \"name\": \"sdfsd\",\n                    \"phoneNumber\": \"235235\",\n                    \"profilePhoto\": \"file-1719156873292.png\",\n                    \"profilePhotoId\": 16,\n                    \"createdAt\": \"2024-06-23T10:04:33.328Z\",\n                    \"updatedAt\": \"2024-06-23T10:04:33.328Z\"\n                }\n            }\n        ]\n    },\n    \"error\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Assign vehicles",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehicleId\":2, \"driverId\":12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{SEREVER_URL}}/assign-vehicles/",
+							"host": [
+								"{{SEREVER_URL}}"
+							],
+							"path": [
+								"assign-vehicles",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Assign vehicles",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"vehicleId\":2, \"driverId\":12\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{SEREVER_URL}}/assign-vehicles/",
+									"host": [
+										"{{SEREVER_URL}}"
+									],
+									"path": [
+										"assign-vehicles",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "707"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c3-X1swx3JbaKjjuF123Nq3WszoRio\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 24 Jun 2024 18:37:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"result\": {\n            \"assignedDate\": \"2024-06-24T18:37:54.616Z\",\n            \"vehicle\": {\n                \"id\": 2,\n                \"vehicleNumber\": \"MH-3939-293\",\n                \"vehicleType\": \"four wheeler\",\n                \"pucCertificate\": \"pucCertificate-1719158426789.png\",\n                \"pucCertificateId\": 18,\n                \"insuranceCertificate\": \"insuranceCertificate-1719158426797.png\",\n                \"insuranceCertificateId\": 19,\n                \"isAssigned\": true,\n                \"createdAt\": \"2024-06-23T10:30:26.883Z\",\n                \"updatedAt\": \"2024-06-23T12:32:09.000Z\"\n            },\n            \"driver\": {\n                \"id\": 12,\n                \"name\": \"hsdf\",\n                \"phoneNumber\": \"22838\",\n                \"profilePhoto\": \"file-1719156785593.png\",\n                \"profilePhotoId\": 14,\n                \"createdAt\": \"2024-06-23T10:03:05.654Z\",\n                \"updatedAt\": \"2024-06-23T10:03:05.654Z\"\n            },\n            \"id\": 8,\n            \"createdAt\": \"2024-06-24T13:07:54.626Z\",\n            \"updatedAt\": \"2024-06-24T13:07:54.626Z\"\n        }\n    },\n    \"error\": null\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

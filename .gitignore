@@ -14,5 +14,3 @@ package-lock.json
 # uploads folder
 uploads/
 
-# postman collection
-Vehicle Transfer.postman_collection.json
